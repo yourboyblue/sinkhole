@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  draft_year: 
+  draft_round: 
+  nfl_id: MyString
+  rotoworld_id: 
+  stats_id: 
+  position: MyString
+  stats_global_id: 
+  espn_id: 
+  kffl_id: 
+  weight: 
+  mfl_id: 
+  fleaflicker_id: 
+  birthdate: 2017-08-24 21:23:29
+  draft_team: MyString
+  draft_pick: 
+  name: MyString
+  college: MyString
+  height: 
+  jersey: 
+  sportsdata_id: MyString
+  team: 
+  cbs_id: 
+
+two:
+  draft_year: 
+  draft_round: 
+  nfl_id: MyString
+  rotoworld_id: 
+  stats_id: 
+  position: MyString
+  stats_global_id: 
+  espn_id: 
+  kffl_id: 
+  weight: 
+  mfl_id: 
+  fleaflicker_id: 
+  birthdate: 2017-08-24 21:23:29
+  draft_team: MyString
+  draft_pick: 
+  name: MyString
+  college: MyString
+  height: 
+  jersey: 
+  sportsdata_id: MyString
+  team: 
+  cbs_id: 
