@@ -10,10 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170825032329) do
+ActiveRecord::Schema.define(version: 20170825185307) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contract_ownership_periods", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "contract_id"
+    t.bigint "owner_id"
+    t.time "start_week"
+    t.time "end_week"
+    t.index ["contract_id"], name: "index_contract_ownership_periods_on_contract_id"
+    t.index ["owner_id"], name: "index_contract_ownership_periods_on_owner_id"
+  end
+
+  create_table "contract_years", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "contract_id"
+    t.bigint "owner_id"
+    t.time "season"
+    t.decimal "liability"
+    t.integer "liability_type"
+    t.index ["contract_id"], name: "index_contract_years_on_contract_id"
+    t.index ["owner_id"], name: "index_contract_years_on_owner_id"
+  end
+
+  create_table "contracts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.time "start_day"
+    t.time "end_day"
+    t.decimal "base_salary"
+    t.decimal "bonus"
+    t.integer "contract_type"
+    t.integer "signing_type"
+  end
+
+  create_table "owners", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "team_name"
+  end
 
   create_table "players", force: :cascade do |t|
     t.integer "draft_year"
@@ -44,4 +85,8 @@ ActiveRecord::Schema.define(version: 20170825032329) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "contract_ownership_periods", "contracts"
+  add_foreign_key "contract_ownership_periods", "owners"
+  add_foreign_key "contract_years", "contracts"
+  add_foreign_key "contract_years", "owners"
 end

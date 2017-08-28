@@ -1,0 +1,2 @@
+class ContractYear < ApplicationRecord
+end

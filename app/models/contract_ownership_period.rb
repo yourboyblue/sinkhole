@@ -1,0 +1,2 @@
+class ContractOwnershipPeriod < ApplicationRecord
+end
