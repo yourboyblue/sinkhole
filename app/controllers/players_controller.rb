@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
 
   def index
-    @player_names = Player.pluck(:name)
+    @printable_player = Player.pluck(:id, :name, :position, :team)
   end
 end
