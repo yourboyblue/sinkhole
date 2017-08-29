@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170825185307) do
+ActiveRecord::Schema.define(version: 20170828213613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,14 @@ ActiveRecord::Schema.define(version: 20170825185307) do
     t.integer "signing_type"
   end
 
+  create_table "nfl_teams", force: :cascade do |t|
+    t.string "fullname"
+    t.string "shortname"
+    t.time "founding_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "owners", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -78,11 +86,12 @@ ActiveRecord::Schema.define(version: 20170825185307) do
     t.integer "jersey"
     t.string "twitter_username"
     t.string "sportsdata_id"
-    t.integer "team"
     t.integer "cbs_id"
     t.string "fff_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "nfl_teams_id", null: false
+    t.index ["nfl_teams_id"], name: "team"
   end
 
   add_foreign_key "contract_ownership_periods", "contracts"
