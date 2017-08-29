@@ -1,0 +1,135 @@
+{
+  "active_teams": [{
+    "fullname": "Free Agent",
+    "shortname": "FA",
+    "founding_year": "1900"
+  }, {
+    "fullname": "Arizona Cardinals",
+    "shortname": "ARI",
+    "founding_year": "1920"
+  }, {
+    "fullname": "Atlanta Falcons",
+    "shortname": "ATL",
+    "founding_year": "1966"
+  }, {
+    "fullname": "Baltimore Ravens",
+    "shortname": "BAL",
+    "founding_year": "1996"
+  }, {
+    "fullname": "Buffalo Bills",
+    "shortname": "BUF",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Carolina Panthers",
+    "shortname": "CAR",
+    "founding_year": "1995"
+  }, {
+    "fullname": "Chicago Bears",
+    "shortname": "CHI",
+    "founding_year": "1920"
+  }, {
+    "fullname": "Cincinnati Bengals",
+    "shortname": "CIN",
+    "founding_year": "1968"
+  }, {
+    "fullname": "Cleveland Browns",
+    "shortname": "CLE",
+    "founding_year": "1946"
+  }, {
+    "fullname": "Dallas Cowboys",
+    "shortname": "DAL",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Denver Broncos",
+    "shortname": "DEN",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Detroit Lions",
+    "shortname": "DET",
+    "founding_year": "1930"
+  }, {
+    "fullname": "Green Bay Packers",
+    "shortname": "GBP",
+    "founding_year": "1921"
+  }, {
+    "fullname": "Houston Texans",
+    "shortname": "HOU",
+    "founding_year": "2002"
+  }, {
+    "fullname": "Indianapolis Colts",
+    "shortname": "IND",
+    "founding_year": "1953"
+  }, {
+    "fullname": "Jacksonville Jaguars",
+    "shortname": "JAC",
+    "founding_year": "1995"
+  }, {
+    "fullname": "Kansas City Chiefs",
+    "shortname": "KCC",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Los Angeles Chargers",
+    "shortname": "LAC",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Los Angeles Rams",
+    "shortname": "LAR",
+    "founding_year": "1937"
+  }, {
+    "fullname": "Miami Dolphins",
+    "shortname": "MIA",
+    "founding_year": "1966"
+  }, {
+    "fullname": "Minnesota Vikings",
+    "shortname": "MIN",
+    "founding_year": "1961"
+  }, {
+    "fullname": "New England Patriots",
+    "shortname": "NEP",
+    "founding_year": "1960"
+  }, {
+    "fullname": "New Orleans Saints",
+    "shortname": "NOS",
+    "founding_year": "1967"
+  }, {
+    "fullname": "New York Giants",
+    "shortname": "NYG",
+    "founding_year": "1925"
+  }, {
+    "fullname": "New York Jets",
+    "shortname": "NYJ",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Oakland Raiders",
+    "shortname": "OAK",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Philadelphia Eagles",
+    "shortname": "PHI",
+    "founding_year": "1933"
+  }, {
+    "fullname": "Pittsburgh Steelers",
+    "shortname": "PIT",
+    "founding_year": "1933"
+  }, {
+    "fullname": "San Francisco 49ers",
+    "shortname": "SFO",
+    "founding_year": "1946"
+  }, {
+    "fullname": "Seattle Seahawks",
+    "shortname": "SEA",
+    "founding_year": "1976"
+  }, {
+    "fullname": "Tampa Bay Buccaneers",
+    "shortname": "TBB",
+    "founding_year": "1976"
+  }, {
+    "fullname": "Tennessee Titans",
+    "shortname": "TEN",
+    "founding_year": "1960"
+  }, {
+    "fullname": "Washington Redskins",
+    "shortname": "WAS",
+    "founding_year": "1932"
+  }]
+}

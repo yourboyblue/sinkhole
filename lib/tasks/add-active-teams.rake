@@ -1,13 +1,15 @@
-namespace :nfl_teams do
+namespace :teams do
   desc 'Import Active Teams'
-  task :add_active_teams => :environment do
+  task :add_teams => :environment do
 
-    file = File.read("active_teams.json")
-    active_teams = JSON.parse(file)["active_teams"]
-    active_teams.each do |team|
+    file = File.read("teams.json")
+    teams = JSON.parse(file)
+    teams.each do |team|
       converted_time = Time.at(team["founding_year"].to_i)
       team.store("founding_year",converted_time)
+      converted_time = Time.at(team["final_year"].to_i)
+      team.store("final_year",converted_time)
     end
-    NflTeam.import active_teams, validate: true
+    Team.import teams, validate: true
   end
 end

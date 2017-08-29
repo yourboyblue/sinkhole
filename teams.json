@@ -1,0 +1,531 @@
+[{
+    "name": "Free Agent",
+    "shortname": "FA",
+    "founding_year": "1900",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Arizona Cardinals",
+    "shortname": "ARI",
+    "founding_year": "1920",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Chicago Cardinals",
+    "shortname": "",
+    "founding_year": "1920",
+    "final_year": "1943",
+    "team_id": "2"
+  },
+  {
+    "name": "Chi/Pit Cards/Steelers",
+    "shortname": "",
+    "founding_year": "1944",
+    "final_year": "1944",
+    "team_id": "2"
+  },
+  {
+    "name": "Chicago Cardinals",
+    "shortname": "",
+    "founding_year": "1945",
+    "final_year": "1959",
+    "team_id": "2"
+  },
+  {
+    "name": "St. Louis Cardinals",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1987",
+    "team_id": "2"
+  },
+  {
+    "name": "Phoenix Cardinals",
+    "shortname": "",
+    "founding_year": "1988",
+    "final_year": "1993",
+    "team_id": "22"
+  },
+  {
+    "name": "Arizona Cardinals",
+    "shortname": "",
+    "founding_year": "1994",
+    "final_year": "2017",
+    "team_id": "2"
+  },
+  {
+    "name": "Atlanta Falcons",
+    "shortname": "ATL",
+    "founding_year": "1966",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Baltimore Ravens",
+    "shortname": "BAL",
+    "founding_year": "1996",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Buffalo Bills",
+    "shortname": "BUF",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Carolina Panthers",
+    "shortname": "CAR",
+    "founding_year": "1995",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Chicago Bears",
+    "shortname": "CHI",
+    "founding_year": "1920",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Decatur Staleys",
+    "shortname": "",
+    "founding_year": "1920",
+    "final_year": "1920",
+    "team_id": "13"
+  },
+  {
+    "name": "Chicago Staleys",
+    "shortname": "",
+    "founding_year": "1921",
+    "final_year": "1921",
+    "team_id": "13"
+  },
+  {
+    "name": "Chicago Bears",
+    "shortname": "",
+    "founding_year": "1922",
+    "final_year": "2017",
+    "team_id": "13"
+  },
+  {
+    "name": "Cincinnati Bengals",
+    "shortname": "CIN",
+    "founding_year": "1968",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Cleveland Browns",
+    "shortname": "CLE",
+    "founding_year": "1946",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Dallas Cowboys",
+    "shortname": "DAL",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Denver Broncos",
+    "shortname": "DEN",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Detroit Lions",
+    "shortname": "DET",
+    "founding_year": "1930",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Portsmouth Spartans",
+    "shortname": "",
+    "founding_year": "1930",
+    "final_year": "1933",
+    "team_id": "21"
+  },
+  {
+    "name": "Detroit Lions",
+    "shortname": "",
+    "founding_year": "1934",
+    "final_year": "2017",
+    "team_id": "21"
+  },
+  {
+    "name": "Green Bay Packers",
+    "shortname": "GBP",
+    "founding_year": "1921",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Houston Texans",
+    "shortname": "HOU",
+    "founding_year": "2002",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Indianapolis Colts",
+    "shortname": "IND",
+    "founding_year": "1953",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Baltimore Colts",
+    "shortname": "",
+    "founding_year": "1953",
+    "final_year": "1983",
+    "team_id": "26"
+  },
+  {
+    "name": "Indianapolis Colts",
+    "shortname": "",
+    "founding_year": "1984",
+    "final_year": "2017",
+    "team_id": "26"
+  },
+  {
+    "name": "Jacksonville Jaguars",
+    "shortname": "JAC",
+    "founding_year": "1995",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Kansas City Chiefs",
+    "shortname": "KCC",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Dallas Texans",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1962",
+    "team_id": "30"
+  },
+  {
+    "name": "Kansas City Chiefs",
+    "shortname": "",
+    "founding_year": "1963",
+    "final_year": "2017",
+    "team_id": "30"
+  },
+  {
+    "name": "Los Angeles Chargers",
+    "shortname": "LAC",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Los Angeles Chargers",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1960",
+    "team_id": "34"
+  },
+  {
+    "name": "San Diego Chargers",
+    "shortname": "SDC",
+    "founding_year": "1961",
+    "final_year": "2016",
+    "team_id": "34"
+  },
+  {
+    "name": "Los Angeles Chargers",
+    "shortname": "",
+    "founding_year": "2017",
+    "final_year": "2017",
+    "team_id": "34"
+  },
+  {
+    "name": "Los Angeles Rams",
+    "shortname": "LAR",
+    "founding_year": "1937",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Cleveland Rams",
+    "shortname": "",
+    "founding_year": "1937",
+    "final_year": "1945",
+    "team_id": "37"
+  },
+  {
+    "name": "Los Angeles Rams",
+    "shortname": "",
+    "founding_year": "1946",
+    "final_year": "1994",
+    "team_id": "37"
+  },
+  {
+    "name": "St. Louis Rams",
+    "shortname": "STL",
+    "founding_year": "1995",
+    "final_year": "2015",
+    "team_id": "37"
+  },
+  {
+    "name": "Los Angeles Rams",
+    "shortname": "",
+    "founding_year": "2016",
+    "final_year": "2017",
+    "team_id": "37"
+  },
+  {
+    "name": "Miami Dolphins",
+    "shortname": "MIA",
+    "founding_year": "1966",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Minnesota Vikings",
+    "shortname": "MIN",
+    "founding_year": "1961",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "New England Patriots",
+    "shortname": "NEP",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Boston Patriots",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1970",
+    "team_id": "44"
+  },
+  {
+    "name": "New England Patriots",
+    "shortname": "",
+    "founding_year": "1971",
+    "final_year": "2017",
+    "team_id": "44"
+  },
+  {
+    "name": "New Orleans Saints",
+    "shortname": "NOS",
+    "founding_year": "1967",
+    "final_year": "2017"
+  }, {
+    "name": "New York Giants",
+    "shortname": "NYG",
+    "founding_year": "1925",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "New York Jets",
+    "shortname": "NYJ",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "New York Titans",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1962",
+    "team_id": "49"
+  },
+  {
+    "name": "New York Jets",
+    "shortname": "",
+    "founding_year": "1963",
+    "final_year": "2017",
+    "team_id": "49"
+  },
+  {
+    "name": "Oakland Raiders",
+    "shortname": "OAK",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Oakland Raiders",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1981",
+    "team_id": "52"
+  },
+  {
+    "name": "Los Angeles Raiders",
+    "shortname": "",
+    "founding_year": "1982",
+    "final_year": "1994",
+    "team_id": "52"
+  },
+  {
+    "name": "Oakland Raiders",
+    "shortname": "OAK",
+    "founding_year": "1995",
+    "final_year": "2017",
+    "team_id": "52"
+  },
+  {
+    "name": "Philadelphia Eagles",
+    "shortname": "PHI",
+    "founding_year": "1933",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Philadelphia Eagles",
+    "shortname": "",
+    "founding_year": "1933",
+    "final_year": "1942",
+    "team_id": "56"
+  },
+  {
+    "name": "Phi/Pit Eagles/Steelers",
+    "shortname": "",
+    "founding_year": "1943",
+    "final_year": "1943",
+    "team_id": "56"
+  },
+  {
+    "name": "Philadelphia Eagles",
+    "shortname": "",
+    "founding_year": "1944",
+    "final_year": "2017",
+    "team_id": "56"
+  },
+  {
+    "name": "Pittsburgh Steelers",
+    "shortname": "PIT",
+    "founding_year": "1933",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Pittsburgh Pirates",
+    "shortname": "",
+    "founding_year": "1933",
+    "final_year": "1939",
+    "team_id": "60"
+  },
+  {
+    "name": "Pittsburgh Steelers",
+    "shortname": "",
+    "founding_year": "1940",
+    "final_year": "1942",
+    "team_id": "60"
+  },
+  {
+    "name": "Phi/Pit Eagles/Steelers",
+    "shortname": "",
+    "founding_year": "1943",
+    "final_year": "1943",
+    "team_id": "60"
+  },
+  {
+    "name": "Chi/Pit Cards/Steelers",
+    "shortname": "",
+    "founding_year": "1944",
+    "final_year": "1944",
+    "team_id": "60"
+  },
+  {
+    "name": "Pittsburgh Steelers",
+    "shortname": "",
+    "founding_year": "1945",
+    "final_year": "2017",
+    "team_id": "60"
+  },
+  {
+    "name": "San Francisco 49ers",
+    "shortname": "SFO",
+    "founding_year": "1946",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Seattle Seahawks",
+    "shortname": "SEA",
+    "founding_year": "1976",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Tampa Bay Buccaneers",
+    "shortname": "TBB",
+    "founding_year": "1976",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Tennessee Titans",
+    "shortname": "TEN",
+    "founding_year": "1960",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Houston Oilers",
+    "shortname": "",
+    "founding_year": "1960",
+    "final_year": "1996",
+    "team_id": "69"
+  },
+  {
+    "name": "Tennessee Oilers",
+    "shortname": "",
+    "founding_year": "1997",
+    "final_year": "1998",
+    "team_id": "69"
+  },
+  {
+    "name": "Tennessee Titans",
+    "shortname": "",
+    "founding_year": "1999",
+    "final_year": "2017",
+    "team_id": "69"
+  },
+  {
+    "name": "Washington Redskins",
+    "shortname": "WAS",
+    "founding_year": "1932",
+    "final_year": "2017",
+    "team_id": ""
+  },
+  {
+    "name": "Boston Braves",
+    "shortname": "",
+    "founding_year": "1932",
+    "final_year": "1932",
+    "team_id": "73"
+  },
+  {
+    "name": "Boston Redskins",
+    "shortname": "",
+    "founding_year": "1933",
+    "final_year": "1936",
+    "team_id": "73"
+  },
+  {
+    "name": "Washington Redskins",
+    "shortname": "",
+    "founding_year": "1937",
+    "final_year": "2017",
+    "team_id": "73"
+  }
+]

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170828213613) do
+ActiveRecord::Schema.define(version: 20170829202218) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,14 +49,6 @@ ActiveRecord::Schema.define(version: 20170828213613) do
     t.integer "signing_type"
   end
 
-  create_table "nfl_teams", force: :cascade do |t|
-    t.string "fullname"
-    t.string "shortname"
-    t.time "founding_year"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "owners", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -78,7 +70,6 @@ ActiveRecord::Schema.define(version: 20170828213613) do
     t.integer "mfl_id"
     t.integer "fleaflicker_id"
     t.time "birthdate"
-    t.string "draft_team"
     t.integer "draft_pick"
     t.string "name"
     t.string "college"
@@ -90,8 +81,21 @@ ActiveRecord::Schema.define(version: 20170828213613) do
     t.string "fff_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "nfl_teams_id", null: false
-    t.index ["nfl_teams_id"], name: "team"
+    t.bigint "team_id", null: false
+    t.bigint "draft_team_id", null: false
+    t.index ["draft_team_id"], name: "index_players_on_draft_team_id"
+    t.index ["team_id"], name: "index_players_on_team_id"
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
+    t.string "shortname"
+    t.time "founding_year"
+    t.time "final_year"
+    t.bigint "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_teams_on_team_id"
   end
 
   add_foreign_key "contract_ownership_periods", "contracts"
