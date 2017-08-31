@@ -1,5 +1,7 @@
 {
   "name": "sinkhole",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "selectize": "^0.12.4"
+  }
 }
