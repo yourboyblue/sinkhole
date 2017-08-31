@@ -1,19 +1,11 @@
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Player</th>
-    <th>Position</th>
-    <th>Team</th>
-    <th>Owner</th>
-    <th>Contract</th>
-  </tr>
+<div class="container-fluid">
   <% @printable_player.each do |player| %>
-  <tr>
-    <% player.each do |data_point| %>
-    <td><%= data_point %></td>
+    <div class="row b--dark-red">
+      <% player.each do |data_point| %>
+        <div class="col-lg-3 bg-black white">
+          <%= data_point %>
+        </div>
+      <% end %>
+    </div>
     <% end %>
-    <td></td>
-    <td></td>
-  <% end %>
-  </tr>
-</table>
+</div>
