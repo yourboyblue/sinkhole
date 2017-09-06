@@ -18,7 +18,7 @@ namespace :players do
     parsed = JSON.parse(file)
     players = parsed["players"]["player"]
     players.each do |player|
-      converted_time = Time.at(player["birthdate"].to_i) # MFL stores birthdates as Unix time integers
+      converted_time = Time.at(player["birthdate"].to_i).to_date # MFL stores birthdates as Unix time integers
       player.store( "birthdate", converted_time )
 
       update_keys(player, custom_keys)
