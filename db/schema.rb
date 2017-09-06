@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20170830193615) do
     t.datetime "updated_at", null: false
     t.bigint "contract_id"
     t.bigint "owner_id"
-    t.time "start_week"
-    t.time "end_week"
+    t.datetime "start_week"
+    t.datetime "end_week"
     t.index ["contract_id"], name: "index_contract_ownership_periods_on_contract_id"
     t.index ["owner_id"], name: "index_contract_ownership_periods_on_owner_id"
   end
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20170830193615) do
     t.datetime "updated_at", null: false
     t.bigint "contract_id"
     t.bigint "owner_id"
-    t.time "season"
+    t.datetime "season"
     t.decimal "liability"
     t.integer "liability_type"
     t.index ["contract_id"], name: "index_contract_years_on_contract_id"
@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 20170830193615) do
   create_table "contracts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.time "start_day"
-    t.time "end_day"
+    t.datetime "start_day"
+    t.datetime "end_day"
     t.decimal "base_salary"
     t.decimal "bonus"
     t.integer "contract_type"
@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 20170830193615) do
     t.integer "weight"
     t.integer "mfl_id"
     t.integer "fleaflicker_id"
-    t.time "birthdate"
+    t.datetime "birthdate"
     t.integer "draft_pick"
     t.string "name"
     t.string "college"
@@ -90,8 +90,8 @@ ActiveRecord::Schema.define(version: 20170830193615) do
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "shortname"
-    t.time "founding_year"
-    t.time "final_year"
+    t.datetime "founding_year"
+    t.datetime "final_year"
     t.bigint "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

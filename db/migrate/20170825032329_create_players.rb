@@ -13,7 +13,7 @@ class CreatePlayers < ActiveRecord::Migration[5.1]
       t.integer :weight
       t.integer :mfl_id
       t.integer :fleaflicker_id
-      t.time :birthdate
+      t.datetime :birthdate
       t.string :draft_team
       t.integer :draft_pick
       t.string :name
