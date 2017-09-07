@@ -1,11 +1,24 @@
 <div class="container-fluid">
-  <% @printable_player.each do |player| %>
-    <div class="row b--dark-red">
-      <% player.each do |data_point| %>
-        <div class="col-lg-3 bg-black white">
-          <%= data_point %>
-        </div>
-      <% end %>
+
+  <div class="row">
+    <div>
+      <label for="search">Search:</label>
     </div>
+    <div>
+      <input placeholder="Type Player Name" type="text" class="validate" id="search" name="search">
+    </div>
+  </div>
+  <div class="row">
+    <table id="player-data">
+    <% @printable_player.each do |player| %>
+      <tr>
+        <% player.each do |data_point| %>
+          <td>
+            <%= data_point %>
+          </td>
+        <% end %>
+      </tr>
     <% end %>
+    </table>
+  </div>
 </div>
