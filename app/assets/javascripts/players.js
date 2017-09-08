@@ -4,44 +4,60 @@ $(document).ready(function () {
   var data = $("#player-data").html();
 
   var playerdata = tableToJSON(data);
-  console.log(playerdata);
+
+  var options = {
+    id: "name",
+    shouldSort: true,
+    tokenize: true,
+    matchAllTokens: true,
+    threshold: 0.4,
+    location: 0,
+    distance: 100,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: ["name"]
+  };
+
+  $('#search').keyup(function (e) {
+
+    tosearch = $("#search").val();
+    fuse = new Fuse(playerdata, options);
+    result = fuse.search(tosearch);
+    console.log(result);
+    // populateResults();
+  });
+
+  function populateResults() {
+    $("#player-data").empty();
+    $.each(result, function (index, value) {
+
+      $("#result tbody").append(
+        "<tr>" + "<td>" + value + "</td>" + "</tr>")
+    })
+  }
 
   function tableToJSON(tablehtml) {
     var jsondata = []
     var rows = tablehtml.trim().replace(/[\r\n]/g, '').replace(/<\/tr>/g, "").replace(/<\/td>/g, "").replace("<tbody>", "").replace("</tbody>", "").split("<tr>").filter(item => item);
 
-    rows.forEach(function(row) {
+    rows.forEach(function (row) {
       cells = row.trim().split("<td>").filter(item => item);
       var trimmedcells = []
-      cells.forEach(function(cell) {
+      cells.forEach(function (cell) {
         trimmedcells.push(cell.trim());
       });
 
-      jsondata.push( JSON.stringify({ id: trimmedcells[0], name: trimmedcells[1], position: trimmedcells[2], team: trimmedcells[3]}) );
+      jsondata.push(JSON.parse(JSON.stringify({
+        id: trimmedcells[0],
+        name: trimmedcells[1],
+        position: trimmedcells[2],
+        team: trimmedcells[3]
+      })));
     });
-
-    return JSON.stringify(jsondata);
+    return JSON.parse(JSON.stringify(jsondata));
   }
 });
 
-// var options = {
-//   keys: ['name'],
-//   id: 'name'
-// }
 
-// $('#search').keyup(function (e) {
 
-//   tosearch = $("#search").val();
-//   fuse = new Fuse(data.responseJSON, options);
-//   result = fuse.search(tosearch);
-//   populateResults();
-// });
 
-// function populateResults() {
-//   $("#tablebody").empty();
-//   $.each(result, function (index, value) {
-
-//     $("#result tbody").append(
-//       "<tr>" + "<td class=\"center-align\">" + value + "</td>" + "</tr>")
-//   })
-// }
