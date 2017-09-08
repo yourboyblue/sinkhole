@@ -6,11 +6,11 @@ $(document).ready(function () {
   var playerdata = tableToJSON(data);
 
   var options = {
-    id: "name",
+    id: "id",
     shouldSort: true,
     tokenize: true,
     matchAllTokens: true,
-    threshold: 0.4,
+    threshold: 0.2,
     location: 0,
     distance: 100,
     maxPatternLength: 32,
@@ -24,21 +24,19 @@ $(document).ready(function () {
     fuse = new Fuse(playerdata, options);
     result = fuse.search(tosearch);
     console.log(result);
-    // populateResults();
+    populateResults();
   });
 
   function populateResults() {
-    $("#player-data").empty();
+    $("#player-data tr").removeClass("show").addClass("hide");
     $.each(result, function (index, value) {
-
-      $("#result tbody").append(
-        "<tr>" + "<td>" + value + "</td>" + "</tr>")
+      $("tr[data-id='" + value + "']").removeClass("hide").addClass("show");
     })
   }
 
   function tableToJSON(tablehtml) {
     var jsondata = []
-    var rows = tablehtml.trim().replace(/[\r\n]/g, '').replace(/<\/tr>/g, "").replace(/<\/td>/g, "").replace("<tbody>", "").replace("</tbody>", "").split("<tr>").filter(item => item);
+    var rows = tablehtml.trim().replace(/[\r\n]/g, '').replace(/<\/tr>/g, "").replace(/<\/td>/g, "").replace("<tbody>", "").replace("</tbody>", "").split(/<tr data-id="\d*">/).filter(item => item);
 
     rows.forEach(function (row) {
       cells = row.trim().split("<td>").filter(item => item);
@@ -57,7 +55,3 @@ $(document).ready(function () {
     return JSON.parse(JSON.stringify(jsondata));
   }
 });
-
-
-
-

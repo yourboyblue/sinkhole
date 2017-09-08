@@ -10,15 +10,17 @@
   </div>
   <div class="row">
     <table id="player-data">
-    <% @printable_player.each do |player| %>
-      <tr>
-        <% player.each do |data_point| %>
-          <td>
-            <%= data_point %>
-          </td>
+      <tbody>
+        <% @printable_player.each do |player| %>
+          <tr data-id="<%= player[0] %>">
+            <% player.each do |data_point| %>
+              <td>
+                <%= data_point %>
+              </td>
+            <% end %>
+          </tr>
         <% end %>
-      </tr>
-    <% end %>
+      </tbody>
     </table>
   </div>
 </div>
